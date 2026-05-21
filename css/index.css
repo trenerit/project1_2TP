@@ -22,11 +22,15 @@ nav {
   display: flex;
   align-items: center;
   height: 7rem;
+  background-color: #023859;
 }
 
 .logo {
   flex-basis: 50%;
   padding-left: 3rem;
+}
+.logo img {
+  width: 6rem;
 }
 
 .menu {
@@ -35,7 +39,7 @@ nav {
   padding-right: 3rem;
 }
 .menu span {
-  color: red;
+  color: #F2B705;
   font-size: 5.4rem;
 }
 

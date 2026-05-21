@@ -1,12 +1,19 @@
+@use 'variables' as *;
+
 nav {
     display: flex;
     align-items: center;
     height: 7rem;
+    background-color: $color1;
 }
 
 .logo {
     flex-basis: 50%;
     padding-left: 3rem;
+
+    img {
+        width: 6rem;
+    }
 }
 
 .menu {
@@ -15,7 +22,7 @@ nav {
     padding-right: 3rem;
     
     span {
-    color: red;
+    color: $color3;
     font-size: 5.4rem;
     }
 }
