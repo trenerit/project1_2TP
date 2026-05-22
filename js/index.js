@@ -1,5 +1,6 @@
 'use strict';
-console.log('start');
+
+// console.log('start');
 // const
 // let
 // var
@@ -16,17 +17,23 @@ console.log('start');
     
     // console.log(tab1);
     
-    function kania() {
-        console.log('jsdhfjhsgjsah');
-    }
+    // function kania() {
+    //     console.log('jsdhfjhsgjsah');
+    // }
     
-    const btn1 = document.getElementById('headerBtn');
+    // const btn1 = document.getElementById('headerBtn');
     
-    console.log(btn1);
+    // console.log(btn1);
     
-    btn1.addEventListener('click', () => {
-        console.log('jsdhfjhsgjsah');
-        const h1 = document.querySelector('header h1');
-        h1.innerText = 'lqksjhdkjsahdfkjsadhflkas ahjsdjkshdjkls';
-    })
-    console.log('end');
+    // btn1.addEventListener('click', () => {
+    //     console.log('jsdhfjhsgjsah');
+    //     const h1 = document.querySelector('header h1');
+    //     h1.innerText = 'lqksjhdkjsahdfkjsadhflkas ahjsdjkshdjkls';
+    // })
+    // console.log('end');
+
+    const hamburger = document.querySelector('.material-symbols-outlined');
+
+    hamburger.addEventListener('click', () => {
+        alert('iudiosuoia')
+    });

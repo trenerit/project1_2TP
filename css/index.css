@@ -21,8 +21,13 @@ a {
 nav {
   display: flex;
   align-items: center;
-  height: 7rem;
+  height: 10rem;
   background-color: #023859;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
 }
 
 .logo {
@@ -30,7 +35,7 @@ nav {
   padding-left: 3rem;
 }
 .logo img {
-  width: 6rem;
+  width: 10rem;
 }
 
 .menu {
@@ -41,6 +46,7 @@ nav {
 .menu span {
   color: #F2B705;
   font-size: 5.4rem;
+  cursor: pointer;
 }
 
 header {
