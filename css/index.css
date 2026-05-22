@@ -48,6 +48,23 @@ nav {
   font-size: 5.4rem;
   cursor: pointer;
 }
+.menu span:nth-of-type(2) {
+  display: none;
+}
+.menu ul {
+  list-style: none;
+}
+
+.menu-hamburger {
+  border: 1px solid red;
+  position: fixed;
+  top: 10rem;
+  right: 0;
+  width: 100%;
+  height: 90%;
+  background-color: #0d0d0d;
+  display: none;
+}
 
 header {
   height: 100vh;

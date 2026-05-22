@@ -32,8 +32,43 @@
     // })
     // console.log('end');
 
-    const hamburger = document.querySelector('.material-symbols-outlined');
+    // const hamburger = document.querySelector('.material-symbols-outlined');
 
-    hamburger.addEventListener('click', () => {
-        alert('iudiosuoia')
+    // hamburger.addEventListener('click', () => {
+    //     alert('iudiosuoia');
+    // });
+
+    const iconsMenu = document.querySelectorAll('.menu span');
+    
+    const clickElem = (e) => {
+        // console.log(e.target);
+        
+        const close = document.querySelectorAll('.menu span')[1];
+        const menu = document.querySelectorAll('.menu span')[0];
+        const menuHamburger = document.querySelector('.menu-hamburger');
+        
+        if(e.target.innerText == 'menu') {
+            
+            
+            e.target.style.display = 'none';
+            
+            close.style.display = 'block';
+            
+            menuHamburger.style.display = 'block';
+        }
+        
+        
+        if(e.target.innerText == 'close') {
+            
+            e.target.style.display = 'none';
+            
+            menu.style.display = 'block';
+            
+            menuHamburger.style.display = 'none';
+        }
+            
+    }
+
+    iconsMenu.forEach((elem, index) => {
+        elem.addEventListener('click', clickElem);
     });
