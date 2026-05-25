@@ -40,17 +40,52 @@ nav {
     ul {
         // display: flex;
         list-style: none;
+        // border: 1px solid #fff;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        li {
+            font-size: 2.4rem;
+            text-align: center;
+            width: 100%;
+            // border: 1px solid red;
+            margin: 0;
+            padding: 0;
+            // margin-top: 3rem;
+            
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 2rem 0;
+                border-bottom: 1px dotted $color3;
+
+                // &:hover {
+                //     background-color: $color1;
+                // }
+            }
+        }
     }
 }
 
 .menu-hamburger {
-    border: 1px solid red;
+    display: none;
+    
+    // border: 1px solid red;
     position: fixed;
     top: 10rem;
     right: 0;
     width: 100%;
     height: 90%;
     background-color: #0d0d0d;
+    color: $color3;
 
-    display: none;
+    justify-content: center;
+    // align-items: center;
+
+    animation: .5s menuShow alternate;
+
 }

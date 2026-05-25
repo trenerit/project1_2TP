@@ -54,7 +54,7 @@
             
             close.style.display = 'block';
             
-            menuHamburger.style.display = 'block';
+            menuHamburger.style.display = 'flex';
         }
         
         

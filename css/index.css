@@ -1,3 +1,11 @@
+@keyframes menuShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   font-family: "Kanit", sans-serif;
   font-weight: normal;
@@ -53,17 +61,38 @@ nav {
 }
 .menu ul {
   list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  font-size: 2.4rem;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+  border-bottom: 1px dotted #F2B705;
 }
 
 .menu-hamburger {
-  border: 1px solid red;
+  display: none;
   position: fixed;
   top: 10rem;
   right: 0;
   width: 100%;
   height: 90%;
   background-color: #0d0d0d;
-  display: none;
+  color: #F2B705;
+  justify-content: center;
+  animation: 0.5s menuShow alternate;
 }
 
 header {
