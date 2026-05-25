@@ -49,22 +49,29 @@
         
         if(e.target.innerText == 'menu') {
             
+            e.target.classList.add('class-none');
+            // e.target.style.display = 'none';
             
-            e.target.style.display = 'none';
-            
-            close.style.display = 'block';
-            
-            menuHamburger.style.display = 'flex';
+            close.classList.remove('class-none');
+            close.classList.add('class-block');
+            // close.style.display = 'block';
+            menuHamburger.classList.remove('class-none');
+            menuHamburger.classList.add('class-flex');
+            // menuHamburger.style.display = 'flex';
         }
         
         
         if(e.target.innerText == 'close') {
             
-            e.target.style.display = 'none';
-            
-            menu.style.display = 'block';
-            
-            menuHamburger.style.display = 'none';
+            // e.target.style.display = 'none';
+            e.target.classList.remove('class-block');
+            e.target.classList.add('class-none');
+            // menu.style.display = 'block';
+            menu.classList.remove('class-none');
+            menu.classList.remove('class-block');
+            // menuHamburger.style.display = 'none';
+            menuHamburger.classList.add('class-none');
+            menuHamburger.classList.remove('class-flex');
         }
             
     }

@@ -33,9 +33,9 @@ nav {
     cursor: pointer;
     }
 
-    span:nth-of-type(2) {
-        display: none;
-    }
+    // span:nth-of-type(2) {
+    //     display: none;
+    // }
 
     ul {
         // display: flex;
@@ -72,7 +72,6 @@ nav {
 }
 
 .menu-hamburger {
-    display: none;
     
     // border: 1px solid red;
     position: fixed;

@@ -26,6 +26,18 @@ a {
   color: inherit;
 }
 
+.class-flex {
+  display: flex;
+}
+
+.class-none {
+  display: none;
+}
+
+.class-block {
+  display: block;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -56,9 +68,6 @@ nav {
   font-size: 5.4rem;
   cursor: pointer;
 }
-.menu span:nth-of-type(2) {
-  display: none;
-}
 .menu ul {
   list-style: none;
   width: 100%;
@@ -83,7 +92,6 @@ nav {
 }
 
 .menu-hamburger {
-  display: none;
   position: fixed;
   top: 10rem;
   right: 0;
