@@ -6,6 +6,14 @@
     opacity: 1;
   }
 }
+@keyframes menuClose {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 * {
   font-family: "Kanit", sans-serif;
   font-weight: normal;
@@ -100,7 +108,7 @@ nav {
   background-color: #0d0d0d;
   color: #F2B705;
   justify-content: center;
-  animation: 0.5s menuShow alternate;
+  animation: 0.5s menuShow both;
 }
 
 header {

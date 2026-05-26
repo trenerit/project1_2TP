@@ -58,6 +58,7 @@
             menuHamburger.classList.remove('class-none');
             menuHamburger.classList.add('class-flex');
             // menuHamburger.style.display = 'flex';
+            menuHamburger.style.animationName = 'menuShow';
         }
         
         
@@ -70,7 +71,9 @@
             menu.classList.remove('class-none');
             menu.classList.remove('class-block');
             // menuHamburger.style.display = 'none';
-            menuHamburger.classList.add('class-none');
+            
+            menuHamburger.style.animationName = 'menuClose';
+            // menuHamburger.classList.add('class-none');
             menuHamburger.classList.remove('class-flex');
         }
             
